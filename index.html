@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
+	<script src="script.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="ShootingGallery">
+	<span class="crosshair hidden"></span>
+	<div class="intro">
+		<h1>Shooting Game</h1>
+		<p>The objective of this game is to hit as many targets as you can, as accurately as possible. The closer to the center you hit, the higher your score. Try and get the highest score you can before you miss 10 targets. Once you miss 10 targets, the game is over!</p>
+		<div class="button start">Start</div>
+	</div>
+	<div class="outro hidden">
+		<h1>Game Over!</h1>
+		<p>Here's how you did:</p>
+		<table id="score">
+			<tr class="points">
+				<td class="label">Points:</td><td class="count">0</td>
+			</tr>
+			<tr class="hits">
+				<td class="label">Hits:</td><td class="count">0</td>
+			</tr>
+			<tr class="shots">
+				<td class="label">Shots:</td><td class="count">0</td>
+			</tr>
+			<tr class="accuracy">
+				<td class="label">Accuracy:</td><td class="count">0%</td>
+			</tr>
+			<tr class="misses hidden">
+				<td class="label">Missed Targets:</td><td class="count">0</td>
+			</tr>
+		</table>
+		<div class="button restart">Try Again</div>
+	</div>
+	
+</div>
+
+
+</div>
+</body>
+</html>

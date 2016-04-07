@@ -1,0 +1,115 @@
+html,body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: myriad,'myriad pro','trebuchet ms',trebuchet,helvetica,arial,sans-serif;
+}
+
+div, p, span {box-sizing: border-box;}
+
+.hidden {display: none;}
+.intro, .outro {width: 400px;margin: 0 auto; background: #888; border-radius: 4px; padding: 20px;margin-top: 10%;}
+	.intro h1, .outro h1 {text-align: center;}
+.button {padding: 10px; cursor: pointer; width: 50%; margin: 12px auto; text-align: center; background: #fff; border-radius: 4px;transition: all 0.5s;}
+	.button:hover {background: #ccc;}
+
+#ShootingGallery {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: url(images/desert-blur.jpg);
+	background-size: cover;
+	background-position: center center;
+	z-index: 1000;
+}
+
+/*#score, #score tr, #score tr td {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}*/
+#score {
+	width: 100%;
+}
+#score td {
+	padding: 3px;
+	border: 1px solid #555; 
+	width: 50%;
+}
+.crosshair {
+	position: absolute;
+	direction: block;
+	width: 50px;
+	height: 50px;
+	background:url(images/crosshair.png);
+	background-size: contain;
+	left: 0;
+	top: 0;
+	z-index: 1100;
+}
+.target {
+	border-radius: 100%;
+	border: solid red;
+	position: absolute;
+	top: 50%;
+	left: 110%;
+	background-color: white;
+	box-sizing: border-box;
+	box-shadow: 1px 1px 1px rgba(0,0,0,10)
+}
+
+.target span {
+	display: block;
+	background-color: red;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	position: relative;
+	margin: 0 auto;
+	border-radius: 100%;
+}
+
+.target.small {
+	width: 100px;
+	height: 100px;
+	right: 10px;
+	border-width: 17px;
+}
+.target.medium {
+	width: 150px;
+	height: 150px;
+	right: 15px;
+	border-width: 25px;
+}
+.target.large {
+	width: 200px;
+	height: 200px;
+	right: 20px;
+	border-width: 35px;
+}
+
+.target.top {
+	top : 25%;
+}
+.target.middle {
+	top : 50%;
+}
+.target.bottom {
+	top : 75%;
+}
+
+.target p.score {
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	animation: fadeUp 0.8s;
+}
+
+
+
+/* RESET */
+
